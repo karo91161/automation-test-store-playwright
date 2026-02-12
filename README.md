@@ -18,7 +18,7 @@ A projekt tartalmaz egy automatizált telepítő szkriptet, amely gondoskodik a 
    ```bash
    python setup_project.py
    ```
-4. Teszt futtatása: `pytest` parancs segítségével.
+4. Teszt futtatása: `python -m pytest` parancs segítségével.
 
 ## 🆘 Manuális telepítés (ha a szkript nem futna)
 
