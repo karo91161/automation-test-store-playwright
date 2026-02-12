@@ -20,14 +20,13 @@ A projekt tartalmaz egy automatizált telepítő szkriptet, amely gondoskodik a 
    ```
 4. Teszt futtatása: `pytest` parancs segítségével.
 
-🆘 Manuális telepítés (ha a szkript nem futna)
+## 🆘 Manuális telepítés (ha a szkript nem futna)
+
 Ha a setup_project.py hibaüzenetet dobna vagy elakadna, kövesd az alábbi lépéseket a környezet kézi beállításához:
 
 Függőségek telepítése:
 
-Bash
+```bash
 pip install -r requirements.txt
-Playwright böngészőmotor letöltése:
-
-Bash
 playwright install chromium
+```
