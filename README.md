@@ -13,8 +13,21 @@ Ez a projekt egy End-to-End (E2E) automatizált tesztet valósít meg az Automat
 A projekt tartalmaz egy automatizált telepítő szkriptet, amely gondoskodik a Python függőségekről és a szükséges böngészőmotorról.
 
 1. Klónozd a repository-t.
-2. Nyiss egy terminált a projekt gyökérmappájában. *Megjegyzés: Javasolt virtuális környezet (venv) használata, de anélkül is működik.*
+2. Nyiss egy terminált a projekt gyökérmappájában. _Megjegyzés: Javasolt virtuális környezet (venv) használata, de anélkül is működik._
 3. Futtasd a telepítő szkriptet:
    ```bash
    python setup_project.py
+   ```
 4. Teszt futtatása: `pytest` parancs segítségével.
+
+🆘 Manuális telepítés (ha a szkript nem futna)
+Ha a setup_project.py hibaüzenetet dobna vagy elakadna, kövesd az alábbi lépéseket a környezet kézi beállításához:
+
+Függőségek telepítése:
+
+Bash
+pip install -r requirements.txt
+Playwright böngészőmotor letöltése:
+
+Bash
+playwright install chromium
