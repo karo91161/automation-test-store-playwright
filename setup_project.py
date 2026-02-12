@@ -15,10 +15,17 @@ def main():
     run_command("pip install --upgrade pip")
     
     run_command("pip install -r requirements.txt")
+
+    run_command("pip install pytest-html")
     
     run_command("playwright install chromium")
     
-    print("\n Telepítés sikeres! Most már futtathatod a tesztet a 'pytest' paranccsal.")
+    print("\n" + "="*40)
+    print("Telepítés sikeres!")
+    print("Most már futtathatod a tesztet:")
+    print("Sima futtatás:  pytest")
+    print("HTML riporttal: pytest --html=report.html --self-contained-html")
+    print("="*40)
 
 if __name__ == "__main__":
     main()
