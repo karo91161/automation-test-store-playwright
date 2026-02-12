@@ -18,7 +18,7 @@ def main():
     
     run_command("playwright install chromium")
     
-    print("\n✅ Telepítés sikeres! Most már futtathatod a tesztet a 'pytest' paranccsal.")
+    print("\n Telepítés sikeres! Most már futtathatod a tesztet a 'pytest' paranccsal.")
 
 if __name__ == "__main__":
     main()
