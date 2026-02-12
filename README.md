@@ -1,0 +1,20 @@
+# Automation Test Store - E2E Purchase
+
+Ez a projekt egy End-to-End (E2E) automatizált tesztet valósít meg az Automation Test Store weboldalon. Teszt menete:
+
+- Regisztráció: Új fiókot hoz létre egyedi, időbélyeggel ellátott adatokkal.
+- Termékválasztás: Megkeresi a pólókat, majd ár szerint csökkenő sorrendbe rendezi őket.
+- Kosárba tétel: Kiválasztja és kosárba teszi a két legdrágább elérhető pólót.
+- Rendelés: Végigviszi a checkout folyamatot és megerősíti a vásárlást.
+- Ellenőrzés: Validálja a sikeres rendelésről szóló visszaigazolást.
+
+## 🛠️ Telepítés és futtatás
+
+A projekt tartalmaz egy automatizált telepítő szkriptet, amely gondoskodik a Python függőségekről és a szükséges böngészőmotorról.
+
+1. Klónozd a repository-t.
+2. Nyiss egy terminált a projekt gyökérmappájában. *Megjegyzés: Javasolt virtuális környezet (venv) használata, de anélkül is működik.*
+3. Futtasd a telepítő szkriptet:
+   ```bash
+   python setup_project.py
+4. Teszt futtatása: `pytest` parancs segítségével.
