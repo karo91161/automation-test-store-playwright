@@ -12,7 +12,8 @@ Ez a projekt egy End-to-End (E2E) automatizált tesztet valósít meg az Automat
 
 A projekt tartalmaz egy automatizált telepítő szkriptet, amely gondoskodik a Python függőségekről és a szükséges böngészőmotorról.
 
-1. Klónozd a repository-t.
+1. Klónozd a repository-t:
+   `git clone https://github.com/karo91161/automation-test-store-playwright.git .`
 2. Nyiss egy terminált a projekt gyökérmappájában. _Megjegyzés: Javasolt virtuális környezet (venv) használata, de anélkül is működik._
 3. Futtasd a telepítő szkriptet:
    ```bash
