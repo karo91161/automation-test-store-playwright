@@ -13,7 +13,7 @@ Ez a projekt egy End-to-End (E2E) automatizált tesztet valósít meg az Automat
 A projekt tartalmaz egy automatizált telepítő szkriptet, amely gondoskodik a Python függőségekről és a szükséges böngészőmotorról.
 
 1. Klónozd a repository-t.
-2. Nyiss egy terminált a projekt gyökérmappájában.
+2. Nyiss egy terminált a projekt gyökérmappájában. *Megjegyzés: Javasolt virtuális környezet (venv) használata, de anélkül is működik.*
 3. Futtasd a telepítő szkriptet:
    ```bash
    python setup_project.py
