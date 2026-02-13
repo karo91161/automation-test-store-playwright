@@ -24,16 +24,19 @@ def test_registration_and_purchase_e2e(page: Page):
     reg_page.fill_registration_form(user_data)
 
     expect(page.locator(".maintext")).to_contain_text("Your Account Has Been Created!")
-    print(f"\nSuccessfully registered user: {user_data['login_name']}")
+    print(f"\nSikeresen regisztrált felhasználó: {user_data['login_name']}")
     
     # Select the two most expensive t-shirts and add to cart
     product_page = ProductPage(page)
     product_page.go_to_tshirts()
     product_page.add_two_most_expensive_to_cart()
+    print("\nKiválasztottuk a két legdrágább pólót és hozzáadtuk a kosárhoz.")
 
     # Proceed to checkout and confirm the order
     reg_page.navigate(CART_URL)
     page.locator("#cart_checkout1").click()
     page.get_by_role("button", name="Confirm Order").click()
+    print("\nRendelés megerősítése megtörtént.")
 
     expect(page.locator(".maintext")).to_contain_text("Your Order Has Been Processed!")
+    print("\nRendelés sikeresen leadva!")

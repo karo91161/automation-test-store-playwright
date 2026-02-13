@@ -23,8 +23,9 @@ def main():
     print("\n" + "="*40)
     print("Telepítés sikeres!")
     print("Most már futtathatod a tesztet:")
-    print("Sima futtatás:  pytest")
-    print("HTML riporttal: pytest --html=report.html --self-contained-html")
+    print("Sima futtatás:  python -m pytest")
+    print("HTML riporttal: python -m pytest --html=report.html --self-contained-html")
+    print("Böngészőben lassítva: python -m pytest --headed --slowmo 500")
     print("="*40)
 
 if __name__ == "__main__":
